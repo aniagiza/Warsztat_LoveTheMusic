@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+  margin:auto 0;
+}
+.guitar{
+  background-image:repeating-linear-gradient(-55deg, rgba(0,0,0,.75), rgba(0,0,0,.75) 2px, #292929 2px, #292929 4px),
+  url(../images/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 140%;
+  width: 100%;
+  height:400px;
+  header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo{
+    width: 10%;
+    height: 30px;
+    justify-content: space-around;
+    margin-left: 10px;
+  }
+  ul{
+    display: flex;//ustawi li koło siebie
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    margin: 10px;
+  }
+  .mainText {
+    width: 70%;
+    height: 40%;
+  }
+  .line {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 51px;
+    background-image: url("../images/banner-bottom.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &:before, &:after {
+      width: calc(50vw - 130px);
+      height: 51px;
+      content: "";
+      position: absolute;
+      background-color: white;
+    }
+    &:before {
+      left: 0px;
+    }
+    &:after {
+      right: 0px;
+    }
+  }
+  }
